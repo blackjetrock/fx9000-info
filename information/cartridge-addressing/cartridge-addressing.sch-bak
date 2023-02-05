@@ -457,4 +457,6 @@ Wire Wire Line
 Connection ~ 8225 2700
 Wire Wire Line
 	8225 2700 8450 2700
+Text Notes 7475 3125 0    50   ~ 0
+/CS4
 $EndSCHEMATC
