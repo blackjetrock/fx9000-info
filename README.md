@@ -6,5 +6,5 @@ This repository has information about the FX9000P.
 Index
 =====
 
-Cartridge Addressing
-Screen layout
+* Cartridge Addressing
+* Screen layout
