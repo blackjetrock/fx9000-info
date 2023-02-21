@@ -6,5 +6,7 @@ This repository has information about the FX9000P.
 Index
 =====
 
-* Cartridge Addressing
+* Cartridge Addressing including memory map
 * Screen layout
+* Memory dump of 4K cartridge
+
