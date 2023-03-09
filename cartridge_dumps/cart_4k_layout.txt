@@ -88,9 +88,16 @@ Stack? :
 Program area.
 Note that program area number is in data. Line numbers are BCD
 and BASIC is not tokenised.
+The program areas are not in order.
 
-                                   0039 ff00 1052  ...........9...R
 
+Program area number in ASCII
+0039
+
+Then a marker? Used program areas have FF00, unused have FFFF
+ff00 10
+
+52  ...........9...R
 000004f0: 454d 2041 5245 4120 5039 ff00 2050 5249  EM AREA P9.. PRI
 00000500: 4e54 2022 4152 4541 2050 3922 ffff 38ff  NT "AREA P9"..8.
 00000510: 0010 5245 4d20 4152 4541 2050 38ff 0100  ..REM AREA P8...
