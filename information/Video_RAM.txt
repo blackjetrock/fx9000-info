@@ -1,0 +1,16 @@
+Video RAM
+=========
+
+15-March-2023
+
+One of the RAM chips in the FX-9000P is in some form of socket. All of
+the machines I have seen have this single socketed device. I thought
+originally that it was a special socket that re-wired an error on the PCB,
+but I have now removed the socket and found that it is just an ordinary
+IC socket. ther eis no re-wiring of any signals. I have replaced that socket
+in my machine with a socket that matches the other RAM sockets I added.
+All of my video RAM is now socketed and it all work fine. Two of the RAM
+chips had failed and are now replaced by RP2040 video RAM replacement
+PCBs.
+
+
