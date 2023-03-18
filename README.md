@@ -9,4 +9,5 @@ Index
 * Cartridge Addressing including memory map
 * Screen layout
 * Memory dump of 4K cartridge
+* Video RAM socket
 
