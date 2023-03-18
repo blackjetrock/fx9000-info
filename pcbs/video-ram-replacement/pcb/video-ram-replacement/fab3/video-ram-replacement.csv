@@ -1,0 +1,13 @@
+"Id";"Designator";"Package";"Quantity";"Designation";"Supplier and ref";
+1;"R2";"C_0402_1005Metric";1;"10k";;;
+2;"Y1";"ecx-32";1;"ABLS-12.000MHZ-B4-T";;;
+3;"C8,C7";"C_0402_1005Metric";2;"1u";;;
+4;"J2,J1";"SolderWirePad_1x01_SMD_1x2mm";2;"Conn_01x01_Female";;;
+5;"U1";"DIP-18_W7.62mm_Socket";1;"ram_4044";;;
+6;"U3";"SOT-223-3_TabPin2";1;"NCP1117-3.3_SOT223";;;
+7;"U2";"SOIC-8_5.23x5.23mm_P1.27mm";1;"W25Q128JVS";;;
+8;"C17,C16";"C_0805_2012Metric";2;"10u";;;
+9;"C15,C14,C13,C11,C10,C9,C6,C5";"C_0402_1005Metric";8;"100n";;;
+10;"U7";"RP2040-QFN-56-no_holes";1;"RP2040";;;
+11;"R1";"C_0402_1005Metric";1;"1k";;;
+12;"C3,C2";"C_0402_1005Metric";2;"27p";;;

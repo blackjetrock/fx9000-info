@@ -1,0 +1,13 @@
+### Module positions - created on Wed 22 Feb 2023 09:34:04 GMT ###
+### Printed by Pcbnew version kicad 5.1.5+dfsg1-2build2
+## Unit = mm, Angle = deg.
+## Side : top
+# Ref     Val                  Package                                             PosX       PosY       Rot  Side
+C2        27p                  C_0402_1005Metric                               185.0390  -147.8280    0.0000  top
+C3        27p                  C_0402_1005Metric                               181.7878  -147.8280  180.0000  top
+R1        1k                   C_0402_1005Metric                               183.4896  -147.9804   90.0000  top
+U2        W25Q128JVS           SOIC-8_5.23x5.23mm_P1.27mm                      183.3880  -136.2710  270.0000  top
+U3        NCP1117-3.3_SOT223   SOT-223-3_TabPin2                               183.3880  -127.0000  270.0000  top
+U7        RP2040               RP2040-QFN-56-no_holes                          183.3880  -155.2702  180.0000  top
+Y1        ABLS-12.000MHZ-B4-T  Crystal_SMD_3225-4Pin_3.2x2.5mm_HandSoldering   183.1340  -144.3990   90.0000  top
+## End
