@@ -28,7 +28,7 @@
 #define DEBUG_STOP {volatile int x = 1; while(x) {} }
 
 #define TEST_SINGLE_ADDRESS  0
-#define TEST_ALL_ADDRESS     0
+#define TEST_ALL_ADDRESS     1
 
 //-----------------------------------------------------------------------------
 //

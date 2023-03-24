@@ -162,12 +162,17 @@ Discarded input sections
  .text          0x0000000000000000        0x0 CMakeFiles/video_ram_replacement.dir/video_ram_replacement.c.obj
  .data          0x0000000000000000        0x0 CMakeFiles/video_ram_replacement.dir/video_ram_replacement.c.obj
  .bss           0x0000000000000000        0x0 CMakeFiles/video_ram_replacement.dir/video_ram_replacement.c.obj
+ .text.ram_emulate
+                0x0000000000000000       0x70 CMakeFiles/video_ram_replacement.dir/video_ram_replacement.c.obj
+ .text.set_gpio_input
+                0x0000000000000000       0x20 CMakeFiles/video_ram_replacement.dir/video_ram_replacement.c.obj
  .text.set_gpio_output
                 0x0000000000000000       0x14 CMakeFiles/video_ram_replacement.dir/video_ram_replacement.c.obj
  .bss.addr_trace_index
                 0x0000000000000000        0x4 CMakeFiles/video_ram_replacement.dir/video_ram_replacement.c.obj
  .bss.number_ce_assert
                 0x0000000000000000        0x4 CMakeFiles/video_ram_replacement.dir/video_ram_replacement.c.obj
+ .bss.rom_data  0x0000000000000000     0x1000 CMakeFiles/video_ram_replacement.dir/video_ram_replacement.c.obj
  .bss.trace_on  0x0000000000000000        0x4 CMakeFiles/video_ram_replacement.dir/video_ram_replacement.c.obj
  .rodata.A0_PIN
                 0x0000000000000000        0x4 CMakeFiles/video_ram_replacement.dir/video_ram_replacement.c.obj
@@ -217,8 +222,24 @@ Discarded input sections
  .bss           0x0000000000000000        0x0 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
  .text.set_sys_clock_48mhz
                 0x0000000000000000       0x40 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
+ .text.set_sys_clock_pll
+                0x0000000000000000       0x78 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
+ .text.check_sys_clock_khz
+                0x0000000000000000      0x16c CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
  .text.setup_default_uart
                 0x0000000000000000        0x8 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
+ .debug_info    0x0000000000000000      0x4f6 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
+ .debug_abbrev  0x0000000000000000      0x1bd CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
+ .debug_loc     0x0000000000000000      0x47f CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
+ .debug_aranges
+                0x0000000000000000       0x38 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
+ .debug_ranges  0x0000000000000000      0x100 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
+ .debug_line    0x0000000000000000      0x6af CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
+ .debug_str     0x0000000000000000      0x3f8 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
+ .comment       0x0000000000000000       0x5a CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
+ .debug_frame   0x0000000000000000       0x90 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
+ .ARM.attributes
+                0x0000000000000000       0x2c CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
  .text          0x0000000000000000        0x0 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
  .data          0x0000000000000000        0x0 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
  .bss           0x0000000000000000        0x0 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
@@ -230,6 +251,8 @@ Discarded input sections
                 0x0000000000000000       0x30 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
  .text.gpio_get_function
                 0x0000000000000000       0x14 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+ .text.gpio_set_pulls
+                0x0000000000000000       0x30 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
  .text.gpio_set_irqover
                 0x0000000000000000       0x24 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
  .text.gpio_set_inover
@@ -319,6 +342,10 @@ Discarded input sections
  .text          0x0000000000000000        0x0 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
  .data          0x0000000000000000        0x0 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
  .bss           0x0000000000000000        0x0 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ .text.irq_is_enabled
+                0x0000000000000000       0x18 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ .text.irq_set_mask_enabled
+                0x0000000000000000       0x20 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
  .text.irq_set_pending
                 0x0000000000000000       0x10 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
  .text.irq_has_shared_handler
@@ -641,6 +668,10 @@ Discarded input sections
                 0x0000000000000000       0xc4 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
  .text.clock_stop
                 0x0000000000000000       0x2c CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+ .text.clock_configure
+                0x0000000000000000      0x114 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+ .text.clock_get_hz
+                0x0000000000000000        0xc CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
  .text.clock_set_reported_hz
                 0x0000000000000000        0xc CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
  .text.frequency_count_khz
@@ -758,6 +789,8 @@ Discarded input sections
  .bss           0x0000000000000000        0x0 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
  .text.__wrap___aeabi_idiv
                 0x0000000000000000       0x50 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+ .text.__wrap___aeabi_ldiv
+                0x0000000000000000      0x434 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
  .text.divmod_s64s64_rem
                 0x0000000000000000        0xc CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
  .text.divmod_u64u64_rem
@@ -2155,8 +2188,12 @@ Discarded input sections
  .text          0x0000000000000000        0x0 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
  .data          0x0000000000000000        0x0 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
  .bss           0x0000000000000000        0x0 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
+ .text.core1_trampoline
+                0x0000000000000000        0x4 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
  .time_critical.multicore_lockout_handler
                 0x0000000000000000       0x5c CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
+ .text.core1_wrapper
+                0x0000000000000000        0xc CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
  .text.multicore_lockout_handshake
                 0x0000000000000000      0x12c CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
  .text.multicore_fifo_push_blocking
@@ -2169,8 +2206,12 @@ Discarded input sections
                 0x0000000000000000       0x78 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
  .text.multicore_reset_core1
                 0x0000000000000000       0x24 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
+ .text.multicore_launch_core1_raw
+                0x0000000000000000       0x84 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
  .text.multicore_launch_core1_with_stack
                 0x0000000000000000       0x34 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
+ .text.multicore_launch_core1
+                0x0000000000000000       0x4c CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
  .text.multicore_lockout_victim_init
                 0x0000000000000000       0x40 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
  .text.multicore_lockout_start_timeout_us
@@ -2185,6 +2226,19 @@ Discarded input sections
                 0x0000000000000000        0x1 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
  .bss.lockout_mutex
                 0x0000000000000000        0x8 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
+ .stack1        0x0000000000000000      0x800 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
+ .debug_info    0x0000000000000000     0x1cc5 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
+ .debug_abbrev  0x0000000000000000      0x4e2 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
+ .debug_loc     0x0000000000000000     0x1189 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
+ .debug_aranges
+                0x0000000000000000       0xa0 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
+ .debug_ranges  0x0000000000000000      0xa28 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
+ .debug_line    0x0000000000000000     0x1414 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
+ .debug_str     0x0000000000000000      0xac5 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
+ .comment       0x0000000000000000       0x5a CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
+ .debug_frame   0x0000000000000000      0x1dc CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
+ .ARM.attributes
+                0x0000000000000000       0x2c CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
  .text          0x0000000000000000        0x0 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/ajm-no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/ff14a/source/ffsystem.c.obj
  .data          0x0000000000000000        0x0 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/ajm-no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/ff14a/source/ffsystem.c.obj
  .bss           0x0000000000000000        0x0 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/ajm-no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/ff14a/source/ffsystem.c.obj
@@ -2786,9 +2840,9 @@ Discarded input sections
  .debug_frame   0x0000000000000000       0xdc CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_rtc/rtc.c.obj
  .ARM.attributes
                 0x0000000000000000       0x2c CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_rtc/rtc.c.obj
- .text          0x0000000000000000        0x0 /tmp/cc1JoKCj.o
- .data          0x0000000000000000        0x0 /tmp/cc1JoKCj.o
- .bss           0x0000000000000000        0x0 /tmp/cc1JoKCj.o
+ .text          0x0000000000000000        0x0 /tmp/cciJffRl.o
+ .data          0x0000000000000000        0x0 /tmp/cciJffRl.o
+ .bss           0x0000000000000000        0x0 /tmp/cciJffRl.o
  .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .text          0x0000000000000000       0x10 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-atexit.o)
@@ -3679,7 +3733,7 @@ LOAD /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp
 .boot2          0x0000000010000000      0x100
                 0x0000000010000000                __boot2_start__ = .
  *(.boot2)
- .boot2         0x0000000010000000      0x100 /tmp/cc1JoKCj.o
+ .boot2         0x0000000010000000      0x100 /tmp/cciJffRl.o
                 0x0000000010000100                __boot2_end__ = .
                 0x0000000000000001                ASSERT (((__boot2_end__ - __boot2_start__) == 0x100), ERROR: Pico second stage bootloader must be 256 bytes in size)
 
@@ -3786,241 +3840,192 @@ LOAD /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp
                 0x0000000020000000       0xc0 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
                 0x0000000020000000                ram_vector_table
 
-.text           0x00000000200000c0     0x22f8 load address 0x0000000010000300
+.text           0x00000000200000c0     0x1ab0 load address 0x0000000010000300
                 0x00000000200000c0                __ram_text_start__ = .
  *(.init)
  .init          0x00000000200000c0        0x4 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crti.o
                 0x00000000200000c0                _init
  *(.text*)
  .text          0x00000000200000c4       0x98 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtbegin.o
- .text.ram_emulate
-                0x000000002000015c       0x70 CMakeFiles/video_ram_replacement.dir/video_ram_replacement.c.obj
-                0x000000002000015c                ram_emulate
- .text.set_gpio_input
-                0x00000000200001cc       0x20 CMakeFiles/video_ram_replacement.dir/video_ram_replacement.c.obj
-                0x00000000200001cc                set_gpio_input
  .text.startup.main
-                0x00000000200001ec       0x84 CMakeFiles/video_ram_replacement.dir/video_ram_replacement.c.obj
-                0x00000000200001ec                main
- .text.set_sys_clock_pll
-                0x0000000020000270       0x78 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
-                0x0000000020000270                set_sys_clock_pll
- .text.check_sys_clock_khz
-                0x00000000200002e8      0x16c CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
-                0x00000000200002e8                check_sys_clock_khz
- .text.gpio_set_pulls
-                0x0000000020000454       0x30 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
-                0x0000000020000454                gpio_set_pulls
+                0x000000002000015c      0x14c CMakeFiles/video_ram_replacement.dir/video_ram_replacement.c.obj
+                0x000000002000015c                main
  .text.gpio_init
-                0x0000000020000484       0x3c CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
-                0x0000000020000484                gpio_init
+                0x00000000200002a8       0x3c CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+                0x00000000200002a8                gpio_init
  .text.hw_claim_or_assert
-                0x00000000200004c0       0x48 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
-                0x00000000200004c0                hw_claim_or_assert
+                0x00000000200002e4       0x48 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+                0x00000000200002e4                hw_claim_or_assert
  .text.running_on_fpga
-                0x0000000020000508       0x10 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
-                0x0000000020000508                running_on_fpga
+                0x000000002000032c       0x10 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+                0x000000002000032c                running_on_fpga
  .text.spin_locks_reset
-                0x0000000020000518       0x1c CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
-                0x0000000020000518                spin_locks_reset
+                0x000000002000033c       0x1c CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+                0x000000002000033c                spin_locks_reset
  .text.next_striped_spin_lock_num
-                0x0000000020000534       0x18 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
-                0x0000000020000534                next_striped_spin_lock_num
+                0x0000000020000358       0x18 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+                0x0000000020000358                next_striped_spin_lock_num
  .text.irq_set_enabled
-                0x000000002000054c       0x24 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x000000002000054c                irq_set_enabled
- .text.irq_is_enabled
-                0x0000000020000570       0x18 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x0000000020000570                irq_is_enabled
- .text.irq_set_mask_enabled
-                0x0000000020000588       0x20 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x0000000020000588                irq_set_mask_enabled
+                0x0000000020000370       0x24 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x0000000020000370                irq_set_enabled
  .text.irq_get_vtable_handler
-                0x00000000200005a8       0x10 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x00000000200005a8                irq_get_vtable_handler
+                0x0000000020000394       0x10 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x0000000020000394                irq_get_vtable_handler
  .text.irq_set_exclusive_handler
-                0x00000000200005b8       0x54 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x00000000200005b8                irq_set_exclusive_handler
+                0x00000000200003a4       0x54 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x00000000200003a4                irq_set_exclusive_handler
  .text.irq_remove_handler
-                0x000000002000060c      0x1b4 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x000000002000060c                irq_remove_handler
+                0x00000000200003f8      0x1b4 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x00000000200003f8                irq_remove_handler
  .text.irq_add_tail_to_free_list
-                0x00000000200007c0       0xb8 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x00000000200007c0                irq_add_tail_to_free_list
+                0x00000000200005ac       0xb8 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x00000000200005ac                irq_add_tail_to_free_list
  .text.irq_init_priorities
-                0x0000000020000878       0x24 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x0000000020000878                irq_init_priorities
+                0x0000000020000664       0x24 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x0000000020000664                irq_init_priorities
  .text.lock_init
-                0x000000002000089c       0x10 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
-                0x000000002000089c                lock_init
+                0x0000000020000688       0x10 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
+                0x0000000020000688                lock_init
  .text.timer_pool_entry_comparator
-                0x00000000200008ac       0x34 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_time/time.c.obj
-                0x00000000200008ac                timer_pool_entry_comparator
+                0x0000000020000698       0x34 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000020000698                timer_pool_entry_comparator
  .text.add_alarm_under_lock
-                0x00000000200008e0      0x108 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x00000000200006cc      0x108 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_time/time.c.obj
  .text.alarm_pool_alarm_callback
-                0x00000000200009e8      0x1c8 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x00000000200007d4      0x1c8 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_time/time.c.obj
  .text.alarm_pool_init_default
-                0x0000000020000bb0       0x64 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_time/time.c.obj
-                0x0000000020000bb0                alarm_pool_init_default
+                0x000000002000099c       0x64 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x000000002000099c                alarm_pool_init_default
  .text.hardware_alarm_irq_handler
-                0x0000000020000c14       0xb8 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x0000000020000a00       0xb8 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
  .text.hardware_alarm_claim
-                0x0000000020000ccc       0x18 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x0000000020000ccc                hardware_alarm_claim
+                0x0000000020000ab8       0x18 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x0000000020000ab8                hardware_alarm_claim
  .text.time_us_64
-                0x0000000020000ce4       0x14 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x0000000020000ce4                time_us_64
+                0x0000000020000ad0       0x14 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x0000000020000ad0                time_us_64
  .text.hardware_alarm_set_callback
-                0x0000000020000cf8       0x8c CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x0000000020000cf8                hardware_alarm_set_callback
+                0x0000000020000ae4       0x8c CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x0000000020000ae4                hardware_alarm_set_callback
  .text.hardware_alarm_set_target
-                0x0000000020000d84       0xe4 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x0000000020000d84                hardware_alarm_set_target
+                0x0000000020000b70       0xe4 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x0000000020000b70                hardware_alarm_set_target
  .text.hardware_alarm_cancel
-                0x0000000020000e68       0x40 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x0000000020000e68                hardware_alarm_cancel
+                0x0000000020000c54       0x40 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x0000000020000c54                hardware_alarm_cancel
  .text.ph_merge_nodes
-                0x0000000020000ea8       0x68 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x0000000020000c94       0x68 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_util/pheap.c.obj
  .text.ph_post_alloc_init
-                0x0000000020000f10       0x3c CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x0000000020000f10                ph_post_alloc_init
+                0x0000000020000cfc       0x3c CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x0000000020000cfc                ph_post_alloc_init
  .text.ph_merge_two_pass
-                0x0000000020000f4c       0x90 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x0000000020000f4c                ph_merge_two_pass
+                0x0000000020000d38       0x90 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x0000000020000d38                ph_merge_two_pass
  .text.ph_remove_any_head
-                0x0000000020000fdc       0xf8 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x0000000020000dc8       0xf8 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_util/pheap.c.obj
  .text.ph_remove_head
-                0x00000000200010d4      0x13c CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x00000000200010d4                ph_remove_head
+                0x0000000020000ec0      0x13c CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x0000000020000ec0                ph_remove_head
  .text.ph_remove_and_free_node
-                0x0000000020001210       0x7c CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x0000000020001210                ph_remove_and_free_node
+                0x0000000020000ffc       0x7c CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x0000000020000ffc                ph_remove_and_free_node
  .text.mutex_init
-                0x000000002000128c       0x1c CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
-                0x000000002000128c                mutex_init
+                0x0000000020001078       0x1c CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+                0x0000000020001078                mutex_init
  .text.recursive_mutex_init
-                0x00000000200012a8       0x1c CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
-                0x00000000200012a8                recursive_mutex_init
+                0x0000000020001094       0x1c CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+                0x0000000020001094                recursive_mutex_init
  .text.runtime_init
-                0x00000000200012c4       0xf0 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x00000000200012c4                runtime_init
- .text.exit     0x00000000200013b4        0x4 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x00000000200013b4                exit
- .text.panic    0x00000000200013b8       0x30 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x00000000200013b8                panic
+                0x00000000200010b0       0xf0 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x00000000200010b0                runtime_init
+ .text.exit     0x00000000200011a0        0x4 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x00000000200011a0                exit
+ .text.panic    0x00000000200011a4       0x30 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x00000000200011a4                panic
  .text.hard_assertion_failure
-                0x00000000200013e8        0xc CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x00000000200013e8                hard_assertion_failure
- .text.clock_configure
-                0x00000000200013f4      0x114 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
-                0x00000000200013f4                clock_configure
+                0x00000000200011d4        0xc CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x00000000200011d4                hard_assertion_failure
  .text.clocks_init
-                0x0000000020001508      0x2bc CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
-                0x0000000020001508                clocks_init
- .text.clock_get_hz
-                0x00000000200017c4        0xc CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
-                0x00000000200017c4                clock_get_hz
+                0x00000000200011e0      0x2bc CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+                0x00000000200011e0                clocks_init
  .text.pll_init
-                0x00000000200017d0       0xa8 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
-                0x00000000200017d0                pll_init
+                0x000000002000149c       0xa8 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+                0x000000002000149c                pll_init
  .text.watchdog_start_tick
-                0x0000000020001878       0x10 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
-                0x0000000020001878                watchdog_start_tick
+                0x0000000020001544       0x10 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+                0x0000000020001544                watchdog_start_tick
  .text.xosc_init
-                0x0000000020001888       0x28 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
-                0x0000000020001888                xosc_init
+                0x0000000020001554       0x28 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+                0x0000000020001554                xosc_init
  .text._out_char
-                0x00000000200018b0       0x10 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x000000002000157c       0x10 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text.weak_raw_vprintf
-                0x00000000200018c0       0x30 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
-                0x00000000200018c0                weak_raw_vprintf
- .text          0x00000000200018f0       0x10 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+                0x000000002000158c       0x30 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x000000002000158c                weak_raw_vprintf
+ .text          0x00000000200015bc       0x10 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
  .text.rom_func_lookup
-                0x0000000020001900       0x10 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
-                0x0000000020001900                rom_func_lookup
+                0x00000000200015cc       0x10 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+                0x00000000200015cc                rom_func_lookup
  .text.rom_data_lookup
-                0x0000000020001910       0x10 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
-                0x0000000020001910                rom_data_lookup
+                0x00000000200015dc       0x10 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+                0x00000000200015dc                rom_data_lookup
  .text.rom_funcs_lookup
-                0x0000000020001920       0x3c CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
-                0x0000000020001920                rom_funcs_lookup
+                0x00000000200015ec       0x3c CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+                0x00000000200015ec                rom_funcs_lookup
  .text.__wrap___aeabi_uidiv
-                0x000000002000195c       0x4c CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
-                0x000000002000195c                __wrap___aeabi_uidiv
-                0x000000002000195c                __wrap___aeabi_uidivmod
-                0x000000002000195c                div_u32u32
-                0x000000002000195c                divmod_u32u32
-                0x0000000020001964                divmod_u32u32_unsafe
-                0x000000002000198c                divmod_u32u32_savestate
- .text.__wrap___aeabi_ldiv
-                0x00000000200019a8      0x434 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
-                0x00000000200019a8                div_s64s64
-                0x00000000200019a8                divmod_s64s64
-                0x00000000200019a8                __wrap___aeabi_ldivmod
-                0x00000000200019e0                div_u64u64
-                0x00000000200019e0                divmod_u64u64
-                0x00000000200019e0                __wrap___aeabi_uldivmod
-                0x00000000200019f0                divmod_u64u64_savestate
-                0x0000000020001a18                divmod_s64s64_unsafe
-                0x0000000020001aa0                divmod_u64u64_unsafe
+                0x0000000020001628       0x4c CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+                0x0000000020001628                __wrap___aeabi_uidiv
+                0x0000000020001628                __wrap___aeabi_uidivmod
+                0x0000000020001628                div_u32u32
+                0x0000000020001628                divmod_u32u32
+                0x0000000020001630                divmod_u32u32_unsafe
+                0x0000000020001658                divmod_u32u32_savestate
  .text.__aeabi_double_init
-                0x0000000020001ddc       0xc0 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
-                0x0000000020001ddc                __aeabi_double_init
+                0x0000000020001674       0xc0 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+                0x0000000020001674                __aeabi_double_init
  .text.double_table_shim_on_use_helper
-                0x0000000020001e9c       0x2c CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x0000000020001e9c                double_table_shim_on_use_helper
+                0x0000000020001734       0x2c CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x0000000020001734                double_table_shim_on_use_helper
  .text.__aeabi_float_init
-                0x0000000020001ec8       0x64 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
-                0x0000000020001ec8                __aeabi_float_init
+                0x0000000020001760       0x64 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+                0x0000000020001760                __aeabi_float_init
  .text.float_table_shim_on_use_helper
-                0x0000000020001f2c       0x2c CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
-                0x0000000020001f2c                float_table_shim_on_use_helper
- .text          0x0000000020001f58       0x10 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
-                0x0000000020001f58                __aeabi_mem_init
- .text.memset   0x0000000020001f68        0xc CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
-                0x0000000020001f68                __wrap_memset
- .text.memcpy   0x0000000020001f74        0xc CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
-                0x0000000020001f74                __wrap___aeabi_memcpy
-                0x0000000020001f74                __wrap_memcpy
+                0x00000000200017c4       0x2c CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
+                0x00000000200017c4                float_table_shim_on_use_helper
+ .text          0x00000000200017f0       0x10 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                0x00000000200017f0                __aeabi_mem_init
+ .text.memset   0x0000000020001800        0xc CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                0x0000000020001800                __wrap_memset
+ .text.memcpy   0x000000002000180c        0xc CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                0x000000002000180c                __wrap___aeabi_memcpy
+                0x000000002000180c                __wrap_memcpy
  .text.stdio_out_chars_no_crlf
-                0x0000000020001f80       0x10 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000000020001818       0x10 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.stdio_out_chars_crlf
-                0x0000000020001f90       0x94 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000000020001828       0x94 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.stdio_put_string
-                0x0000000020002024      0x100 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x00000000200018bc      0x100 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.__wrap_putchar
-                0x0000000020002124       0xa4 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x0000000020002124                __wrap_putchar
+                0x00000000200019bc       0xa4 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x00000000200019bc                __wrap_putchar
  .text.__wrap_puts
-                0x00000000200021c8       0x3c CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x00000000200021c8                __wrap_puts
+                0x0000000020001a60       0x3c CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000000020001a60                __wrap_puts
  .text.startup._retrieve_unique_id_on_boot
-                0x0000000020002204       0x10 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
+                0x0000000020001a9c       0x10 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
  .text.flash_get_unique_id
-                0x0000000020002214       0x40 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
-                0x0000000020002214                flash_get_unique_id
- .text.core1_trampoline
-                0x0000000020002254        0x4 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
- .text.core1_wrapper
-                0x0000000020002258        0xc CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
-                0x0000000020002258                core1_wrapper
- .text.multicore_launch_core1_raw
-                0x0000000020002264       0x84 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
-                0x0000000020002264                multicore_launch_core1_raw
- .text.multicore_launch_core1
-                0x00000000200022e8       0x4c CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
-                0x00000000200022e8                multicore_launch_core1
- .text          0x0000000020002334        0x4 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
-                0x0000000020002334                __aeabi_ldiv0
-                0x0000000020002334                __aeabi_idiv0
- .text          0x0000000020002338       0x68 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-strlen-stub.o)
-                0x0000000020002338                strlen
+                0x0000000020001aac       0x40 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
+                0x0000000020001aac                flash_get_unique_id
+ .text          0x0000000020001aec        0x4 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+                0x0000000020001aec                __aeabi_ldiv0
+                0x0000000020001aec                __aeabi_idiv0
+ .text          0x0000000020001af0       0x68 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-strlen-stub.o)
+                0x0000000020001af0                strlen
  *(.fini)
- .fini          0x00000000200023a0        0x4 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crti.o
-                0x00000000200023a0                _fini
- *fill*         0x00000000200023a4        0x4 
- .fini.__stub   0x00000000200023a8       0x10 linker stubs
+ .fini          0x0000000020001b58        0x4 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crti.o
+                0x0000000020001b58                _fini
+ *fill*         0x0000000020001b5c        0x4 
+ .fini.__stub   0x0000000020001b60       0x10 linker stubs
  *crtbegin.o(.ctors)
  *crtbegin?.o(.ctors)
  *(EXCLUDE_FILE(*crtend.o *crtend?.o) .ctors)
@@ -4032,239 +4037,233 @@ LOAD /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp
  *(SORT_BY_NAME(.dtors.*))
  *(.dtors)
  *(.eh_frame*)
- .eh_frame      0x00000000200023b8        0x0 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtbegin.o
-                0x00000000200023b8                . = ALIGN (0x4)
-                0x00000000200023b8                __ram_text_end__ = .
+ .eh_frame      0x0000000020001b70        0x0 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtbegin.o
+                0x0000000020001b70                . = ALIGN (0x4)
+                0x0000000020001b70                __ram_text_end__ = .
                 0x0000000010000300                __ram_text_source__ = LOADADDR (.text)
 
-.glue_7         0x00000000200023b8        0x0 load address 0x00000000100025f8
- .glue_7        0x00000000200023b8        0x0 linker stubs
+.glue_7         0x0000000020001b70        0x0 load address 0x0000000010001db0
+ .glue_7        0x0000000020001b70        0x0 linker stubs
 
-.glue_7t        0x00000000200023b8        0x0 load address 0x00000000100025f8
- .glue_7t       0x00000000200023b8        0x0 linker stubs
+.glue_7t        0x0000000020001b70        0x0 load address 0x0000000010001db0
+ .glue_7t       0x0000000020001b70        0x0 linker stubs
 
-.vfp11_veneer   0x00000000200023b8        0x0 load address 0x00000000100025f8
- .vfp11_veneer  0x00000000200023b8        0x0 linker stubs
+.vfp11_veneer   0x0000000020001b70        0x0 load address 0x0000000010001db0
+ .vfp11_veneer  0x0000000020001b70        0x0 linker stubs
 
-.v4_bx          0x00000000200023b8        0x0 load address 0x00000000100025f8
- .v4_bx         0x00000000200023b8        0x0 linker stubs
+.v4_bx          0x0000000020001b70        0x0 load address 0x0000000010001db0
+ .v4_bx         0x0000000020001b70        0x0 linker stubs
 
-.iplt           0x00000000200023b8        0x0 load address 0x00000000100025f8
- .iplt          0x00000000200023b8        0x0 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtbegin.o
+.iplt           0x0000000020001b70        0x0 load address 0x0000000010001db0
+ .iplt          0x0000000020001b70        0x0 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtbegin.o
 
-.rel.dyn        0x00000000200023b8        0x0 load address 0x00000000100025f8
- .rel.iplt      0x00000000200023b8        0x0 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtbegin.o
+.rel.dyn        0x0000000020001b70        0x0 load address 0x0000000010001db0
+ .rel.iplt      0x0000000020001b70        0x0 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtbegin.o
 
-.data           0x00000000200023c0      0x3e8 load address 0x00000000100025f8
-                0x00000000200023c0                __data_start__ = .
+.data           0x0000000020001b70      0x3b8 load address 0x0000000010001db0
+                0x0000000020001b70                __data_start__ = .
  *(vtable)
  *(.time_critical*)
  .time_critical.mutex_enter_blocking
-                0x00000000200023c0       0x48 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
-                0x00000000200023c0                mutex_enter_blocking
+                0x0000000020001b70       0x48 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+                0x0000000020001b70                mutex_enter_blocking
  .time_critical.mutex_try_enter
-                0x0000000020002408       0x48 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
-                0x0000000020002408                mutex_try_enter
+                0x0000000020001bb8       0x48 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+                0x0000000020001bb8                mutex_try_enter
  .time_critical.mutex_exit
-                0x0000000020002450       0x28 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
-                0x0000000020002450                mutex_exit
+                0x0000000020001c00       0x28 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+                0x0000000020001c00                mutex_exit
  .time_critical.flash_init_boot2_copyout
-                0x0000000020002478       0x30 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
+                0x0000000020001c28       0x30 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
  .time_critical.flash_enable_xip_via_boot2
-                0x00000000200024a8       0x10 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
+                0x0000000020001c58       0x10 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
  .time_critical.flash_cs_force
-                0x00000000200024b8       0x38 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
+                0x0000000020001c68       0x38 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
  .time_critical.flash_do_cmd
-                0x00000000200024f0       0xc4 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
-                0x00000000200024f0                flash_do_cmd
-                0x00000000200025b4                . = ALIGN (0x4)
+                0x0000000020001ca0       0xc4 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
+                0x0000000020001ca0                flash_do_cmd
+                0x0000000020001d64                . = ALIGN (0x4)
  *(.rodata*)
- .rodata.main.str1.4
-                0x00000000200025b4       0x32 CMakeFiles/video_ram_replacement.dir/video_ram_replacement.c.obj
- *fill*         0x00000000200025e6        0x2 
  .rodata.address_pins
-                0x00000000200025e8       0x38 CMakeFiles/video_ram_replacement.dir/video_ram_replacement.c.obj
-                0x00000000200025e8                address_pins
+                0x0000000020001d64       0x38 CMakeFiles/video_ram_replacement.dir/video_ram_replacement.c.obj
+                0x0000000020001d64                address_pins
  .rodata.hardware_alarm_claim.str1.4
-                0x0000000020002620       0x22 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
- *fill*         0x0000000020002642        0x2 
+                0x0000000020001d9c       0x22 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+ *fill*         0x0000000020001dbe        0x2 
  .rodata.panic.str1.4
-                0x0000000020002644       0x12 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
- *fill*         0x0000000020002656        0x2 
+                0x0000000020001dc0       0x12 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+ *fill*         0x0000000020001dd2        0x2 
  .rodata.hard_assertion_failure.str1.4
-                0x0000000020002658        0xc CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x0000000020001dd4        0xc CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
  .rodata.str1.4
-                0x0000000020002664       0x50 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000020001de0       0x50 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.__bi_44
-                0x00000000200026b4        0xc CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000020001e30        0xc CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.__bi_56
-                0x00000000200026c0        0xc CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000020001e3c        0xc CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.__bi_75
-                0x00000000200026cc        0xc CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000020001e48        0xc CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.__bi_81
-                0x00000000200026d8        0xc CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000020001e54        0xc CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.crlf_str.6065
-                0x00000000200026e4        0x2 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x00000000200026e8                . = ALIGN (0x4)
- *fill*         0x00000000200026e6        0x2 
+                0x0000000020001e60        0x2 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000000020001e64                . = ALIGN (0x4)
+ *fill*         0x0000000020001e62        0x2 
  *(.data*)
  .data.striped_spin_lock_num
-                0x00000000200026e8        0x1 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
- *fill*         0x00000000200026e9        0x3 
- .data          0x00000000200026ec       0x48 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
-                0x00000000200026ec                irq_handler_chain_slots
-                0x000000002000271c                irq_handler_chain_first_slot
-                0x0000000020002726                irq_handler_chain_remove_tail
+                0x0000000020001e64        0x1 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+ *fill*         0x0000000020001e65        0x3 
+ .data          0x0000000020001e68       0x48 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
+                0x0000000020001e68                irq_handler_chain_slots
+                0x0000000020001e98                irq_handler_chain_first_slot
+                0x0000000020001ea2                irq_handler_chain_remove_tail
  .data.default_alarm_pool
-                0x0000000020002734       0x18 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000020001eb0       0x18 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_time/time.c.obj
  .data.default_alarm_pool_heap
-                0x000000002000274c       0x10 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_time/time.c.obj
- *fill*         0x000000002000275c        0x4 
+                0x0000000020001ec8       0x10 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_time/time.c.obj
+ *fill*         0x0000000020001ed8        0x8 
  .data.aeabi_bits_funcs
-                0x0000000020002760       0x10 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
-                0x0000000020002760                aeabi_bits_funcs
-                0x0000000020002770                aeabi_bits_funcs_end
+                0x0000000020001ee0       0x10 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+                0x0000000020001ee0                aeabi_bits_funcs
+                0x0000000020001ef0                aeabi_bits_funcs_end
  .data.aeabi_mem_funcs
-                0x0000000020002770       0x10 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
-                0x0000000020002770                aeabi_mem_funcs
-                0x0000000020002780                aeabi_mem_funcs_end
-                0x0000000020002780                . = ALIGN (0x4)
+                0x0000000020001ef0       0x10 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                0x0000000020001ef0                aeabi_mem_funcs
+                0x0000000020001f00                aeabi_mem_funcs_end
+                0x0000000020001f00                . = ALIGN (0x4)
  *(.after_data.*)
-                0x0000000020002780                . = ALIGN (0x4)
-                0x0000000020002780                PROVIDE (__mutex_array_start = .)
+                0x0000000020001f00                . = ALIGN (0x4)
+                0x0000000020001f00                PROVIDE (__mutex_array_start = .)
  *(SORT_BY_NAME(.mutex_array.*))
  *(.mutex_array)
- .mutex_array   0x0000000020002780        0x8 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
- .mutex_array   0x0000000020002788        0x8 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x0000000020002790                PROVIDE (__mutex_array_end = .)
-                0x0000000020002790                . = ALIGN (0x4)
-                0x0000000020002790                PROVIDE (__preinit_array_start = .)
+ .mutex_array   0x0000000020001f00        0x8 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
+ .mutex_array   0x0000000020001f08        0x8 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000000020001f10                PROVIDE (__mutex_array_end = .)
+                0x0000000020001f10                . = ALIGN (0x4)
+                0x0000000020001f10                PROVIDE (__preinit_array_start = .)
  *(SORT_BY_NAME(.preinit_array.*))
  .preinit_array.00001
-                0x0000000020002790        0x4 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                0x0000000020001f10        0x4 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
  .preinit_array.00010
-                0x0000000020002794        0x4 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+                0x0000000020001f14        0x4 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
  .preinit_array.00020
-                0x0000000020002798        0x4 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x0000000020001f18        0x4 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
  .preinit_array.00020
-                0x000000002000279c        0x4 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+                0x0000000020001f1c        0x4 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
  *(.preinit_array)
-                0x00000000200027a0                PROVIDE (__preinit_array_end = .)
-                0x00000000200027a0                . = ALIGN (0x4)
-                0x00000000200027a0                PROVIDE (__init_array_start = .)
+                0x0000000020001f20                PROVIDE (__preinit_array_end = .)
+                0x0000000020001f20                . = ALIGN (0x4)
+                0x0000000020001f20                PROVIDE (__init_array_start = .)
  *(SORT_BY_NAME(.init_array.*))
  *(.init_array)
- .init_array    0x00000000200027a0        0x4 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtbegin.o
- .init_array    0x00000000200027a4        0x4 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
-                0x00000000200027a8                PROVIDE (__init_array_end = .)
-                0x00000000200027a8                . = ALIGN (0x4)
-                0x00000000200027a8                PROVIDE (__fini_array_start = .)
+ .init_array    0x0000000020001f20        0x4 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtbegin.o
+ .init_array    0x0000000020001f24        0x4 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
+                0x0000000020001f28                PROVIDE (__init_array_end = .)
+                0x0000000020001f28                . = ALIGN (0x4)
+                0x0000000020001f28                PROVIDE (__fini_array_start = .)
  *(SORT_BY_NAME(.fini_array.*))
  *(.fini_array)
-                0x00000000200027a8                PROVIDE (__fini_array_end = .)
+                0x0000000020001f28                PROVIDE (__fini_array_end = .)
  *(.jcr)
-                0x00000000200027a8                . = ALIGN (0x4)
-                0x00000000200027a8                __data_end__ = .
-                0x00000000100025f8                __etext = LOADADDR (.data)
+                0x0000000020001f28                . = ALIGN (0x4)
+                0x0000000020001f28                __data_end__ = .
+                0x0000000010001db0                __etext = LOADADDR (.data)
 
 .tm_clone_table
-                0x00000000200027a8        0x0 load address 0x00000000100029e0
+                0x0000000020001f28        0x0 load address 0x0000000010002168
  .tm_clone_table
-                0x00000000200027a8        0x0 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtbegin.o
+                0x0000000020001f28        0x0 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtbegin.o
  .tm_clone_table
-                0x00000000200027a8        0x0 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtend.o
+                0x0000000020001f28        0x0 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtend.o
 
-.igot.plt       0x00000000200027a8        0x0 load address 0x00000000100029e0
- .igot.plt      0x00000000200027a8        0x0 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtbegin.o
+.igot.plt       0x0000000020001f28        0x0 load address 0x0000000010002168
+ .igot.plt      0x0000000020001f28        0x0 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtbegin.o
 
 .uninitialized_data
-                0x00000000200027a8        0x0 load address 0x00000000100029e0
-                0x00000000200027a8                . = ALIGN (0x4)
+                0x0000000020001f28        0x0 load address 0x0000000010002168
+                0x0000000020001f28                . = ALIGN (0x4)
  *(.uninitialized_data*)
 
-.scratch_x      0x0000000020040000        0x0 load address 0x00000000100029e0
+.scratch_x      0x0000000020040000        0x0 load address 0x0000000010002168
                 0x0000000020040000                __scratch_x_start__ = .
  *(.scratch_x.*)
                 0x0000000020040000                . = ALIGN (0x4)
                 0x0000000020040000                __scratch_x_end__ = .
-                0x00000000100029e0                __scratch_x_source__ = LOADADDR (.scratch_x)
+                0x0000000010002168                __scratch_x_source__ = LOADADDR (.scratch_x)
 
-.scratch_y      0x0000000020041000        0x0 load address 0x00000000100029e0
+.scratch_y      0x0000000020041000        0x0 load address 0x0000000010002168
                 0x0000000020041000                __scratch_y_start__ = .
  *(.scratch_y.*)
                 0x0000000020041000                . = ALIGN (0x4)
                 0x0000000020041000                __scratch_y_end__ = .
-                0x00000000100029e0                __scratch_y_source__ = LOADADDR (.scratch_y)
+                0x0000000010002168                __scratch_y_source__ = LOADADDR (.scratch_y)
 
-.bss            0x00000000200027a8     0x14d4
-                0x00000000200027a8                . = ALIGN (0x4)
-                0x00000000200027a8                __bss_start__ = .
+.bss            0x0000000020001f28      0x4d4
+                0x0000000020001f28                . = ALIGN (0x4)
+                0x0000000020001f28                __bss_start__ = .
  *(SORT_BY_ALIGNMENT(SORT_BY_NAME(.bss*)))
  .bss.default_alarm_pool_entries
-                0x00000000200027a8      0x100 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_time/time.c.obj
- .bss           0x00000000200028a8       0x1c /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtbegin.o
+                0x0000000020001f28      0x100 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_time/time.c.obj
+ .bss           0x0000000020002028       0x1c /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtbegin.o
  .bss.alarm_callbacks
-                0x00000000200028c4       0x10 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x0000000020002044       0x10 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
  .bss.boot2_copyout
-                0x00000000200028d4      0x100 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
+                0x0000000020002054      0x100 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
  .bss.configured_freq
-                0x00000000200029d4       0x28 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+                0x0000000020002154       0x28 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
  .bss.default_alarm_pool_entry_ids_high
-                0x00000000200029fc       0x10 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x000000002000217c       0x10 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_time/time.c.obj
  .bss.default_alarm_pool_heap_nodes
-                0x0000000020002a0c       0x30 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_time/time.c.obj
- .bss.drivers   0x0000000020002a3c        0x4 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
- .bss.filter    0x0000000020002a40        0x4 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x000000002000218c       0x30 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_time/time.c.obj
+ .bss.drivers   0x00000000200021bc        0x4 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+ .bss.filter    0x00000000200021c0        0x4 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .bss.lazy_vsnprintf
-                0x0000000020002a44        0x4 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .bss.pools     0x0000000020002a48       0x10 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x00000000200021c4        0x4 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .bss.pools     0x00000000200021c8       0x10 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_time/time.c.obj
  .bss.retrieved_id
-                0x0000000020002a58        0x8 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
- .bss.rom_data  0x0000000020002a60     0x1000 CMakeFiles/video_ram_replacement.dir/video_ram_replacement.c.obj
-                0x0000000020002a60                rom_data
+                0x00000000200021d8        0x8 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
  .bss.sf_clz_func
-                0x0000000020003a60        0x4 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
-                0x0000000020003a60                sf_clz_func
+                0x00000000200021e0        0x4 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+                0x00000000200021e0                sf_clz_func
  .bss.sleep_notifier
-                0x0000000020003a64        0x4 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x00000000200021e4        0x4 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_time/time.c.obj
  .bss.target_hi
-                0x0000000020003a68       0x10 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x00000000200021e8       0x10 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
  .bss.boot2_copyout_valid
-                0x0000000020003a78        0x1 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
- .bss.claimed   0x0000000020003a79        0x1 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x00000000200021f8        0x1 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
+ .bss.claimed   0x00000000200021f9        0x1 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
  .bss.irq_hander_chain_free_slot_head
-                0x0000000020003a7a        0x1 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x00000000200021fa        0x1 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
  .bss.timer_callbacks_pending
-                0x0000000020003a7b        0x1 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x00000000200021fb        0x1 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
  *(COMMON)
- COMMON         0x0000000020003a7c      0x100 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
-                0x0000000020003a7c                sd_table
- COMMON         0x0000000020003b7c      0x100 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
-                0x0000000020003b7c                sf_table
-                0x0000000020003c7c                . = ALIGN (0x4)
-                0x0000000020003c7c                __bss_end__ = .
+ COMMON         0x00000000200021fc      0x100 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+                0x00000000200021fc                sd_table
+ COMMON         0x00000000200022fc      0x100 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+                0x00000000200022fc                sf_table
+                0x00000000200023fc                . = ALIGN (0x4)
+                0x00000000200023fc                __bss_end__ = .
 
-.heap           0x0000000020003c7c      0x800
-                0x0000000020003c7c                __end__ = .
-                0x0000000020003c7c                end = __end__
+.heap           0x00000000200023fc      0x800
+                0x00000000200023fc                __end__ = .
+                0x00000000200023fc                end = __end__
  *(.heap*)
- .heap          0x0000000020003c7c      0x800 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
-                0x000000002000447c                __HeapLimit = .
+ .heap          0x00000000200023fc      0x800 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
+                0x0000000020002bfc                __HeapLimit = .
 
-.stack1_dummy   0x0000000020040000      0x800
+.stack1_dummy   0x0000000020040000        0x0
  *(.stack1*)
- .stack1        0x0000000020040000      0x800 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
 
 .stack_dummy    0x0000000020041000      0x800
  *(.stack*)
  .stack         0x0000000020041000      0x800 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
 
-.flash_end      0x00000000100029e0        0x0
-                0x00000000100029e0                __flash_binary_end = .
+.flash_end      0x0000000010002168        0x0
+                0x0000000010002168                __flash_binary_end = .
                 0x0000000020040000                __StackLimit = (ORIGIN (RAM) + LENGTH (RAM))
                 0x0000000020041000                __StackOneTop = (ORIGIN (SCRATCH_X) + LENGTH (SCRATCH_X))
                 0x0000000020042000                __StackTop = (ORIGIN (SCRATCH_Y) + LENGTH (SCRATCH_Y))
-                0x0000000020040800                __StackOneBottom = (__StackOneTop - SIZEOF (.stack1_dummy))
+                0x0000000020041000                __StackOneBottom = (__StackOneTop - SIZEOF (.stack1_dummy))
                 0x0000000020041800                __StackBottom = (__StackTop - SIZEOF (.stack_dummy))
                 0x0000000020042000                PROVIDE (__stack = __StackTop)
                 0x0000000000000001                ASSERT ((__StackLimit >= __HeapLimit), region RAM overflowed)
@@ -4360,7 +4359,7 @@ LOAD CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/ajm-no-OS-F
 LOAD CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/ajm-no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI/src/rtc.c.obj
 LOAD CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
 LOAD CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_rtc/rtc.c.obj
-LOAD /tmp/cc1JoKCj.o
+LOAD /tmp/cciJffRl.o
 LOAD /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libstdc++.a
 LOAD /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libm.a
 START GROUP
@@ -4386,89 +4385,84 @@ LOAD linker stubs
  .ARM.attributes
                 0x000000000000004a       0x2c CMakeFiles/video_ram_replacement.dir/video_ram_replacement.c.obj
  .ARM.attributes
-                0x0000000000000076       0x2c CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
+                0x0000000000000076       0x2c CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
  .ARM.attributes
-                0x00000000000000a2       0x2c CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+                0x00000000000000a2       0x2c CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
  .ARM.attributes
-                0x00000000000000ce       0x2c CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+                0x00000000000000ce       0x2c CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
  .ARM.attributes
-                0x00000000000000fa       0x2c CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+                0x00000000000000fa       0x2c CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
  .ARM.attributes
-                0x0000000000000126       0x2c CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+                0x0000000000000126       0x2c CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
  .ARM.attributes
-                0x0000000000000152       0x2c CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x0000000000000152       0x22 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
  .ARM.attributes
-                0x000000000000017e       0x22 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
+                0x0000000000000174       0x2c CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
  .ARM.attributes
-                0x00000000000001a0       0x2c CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
+                0x00000000000001a0       0x2c CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_time/time.c.obj
  .ARM.attributes
-                0x00000000000001cc       0x2c CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x00000000000001cc       0x2c CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
  .ARM.attributes
-                0x00000000000001f8       0x2c CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x00000000000001f8       0x2c CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_util/pheap.c.obj
  .ARM.attributes
-                0x0000000000000224       0x2c CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x0000000000000224       0x2c CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
  .ARM.attributes
-                0x0000000000000250       0x2c CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+                0x0000000000000250       0x2c CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
  .ARM.attributes
-                0x000000000000027c       0x2c CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x000000000000027c       0x2c CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
  .ARM.attributes
-                0x00000000000002a8       0x2c CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+                0x00000000000002a8       0x2c CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
  .ARM.attributes
-                0x00000000000002d4       0x2c CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+                0x00000000000002d4       0x2c CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
  .ARM.attributes
-                0x0000000000000300       0x2c CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+                0x0000000000000300       0x2c CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
  .ARM.attributes
-                0x000000000000032c       0x2c CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+                0x000000000000032c       0x2c CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .ARM.attributes
-                0x0000000000000358       0x2c CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x0000000000000358       0x22 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
  .ARM.attributes
-                0x0000000000000384       0x22 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+                0x000000000000037a       0x2c CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
  .ARM.attributes
-                0x00000000000003a6       0x2c CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+                0x00000000000003a6       0x22 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
  .ARM.attributes
-                0x00000000000003d2       0x22 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+                0x00000000000003c8       0x22 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
  .ARM.attributes
-                0x00000000000003f4       0x22 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x00000000000003ea       0x2c CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
  .ARM.attributes
-                0x0000000000000416       0x2c CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+                0x0000000000000416       0x22 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
  .ARM.attributes
-                0x0000000000000442       0x22 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x0000000000000438       0x22 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
  .ARM.attributes
-                0x0000000000000464       0x22 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+                0x000000000000045a       0x2c CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
  .ARM.attributes
-                0x0000000000000486       0x2c CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+                0x0000000000000486       0x22 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
  .ARM.attributes
-                0x00000000000004b2       0x22 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
+                0x00000000000004a8       0x2c CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
  .ARM.attributes
-                0x00000000000004d4       0x2c CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
+                0x00000000000004d4       0x22 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
  .ARM.attributes
-                0x0000000000000500       0x22 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                0x00000000000004f6       0x22 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
  .ARM.attributes
-                0x0000000000000522       0x22 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
+                0x0000000000000518       0x32 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .ARM.attributes
-                0x0000000000000544       0x32 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x000000000000054a       0x2c CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .ARM.attributes
-                0x0000000000000576       0x2c CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000000000000576       0x2c CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
  .ARM.attributes
-                0x00000000000005a2       0x2c CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
+                0x00000000000005a2       0x2c CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
  .ARM.attributes
-                0x00000000000005ce       0x2c CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
+                0x00000000000005ce       0x22 /tmp/cciJffRl.o
  .ARM.attributes
-                0x00000000000005fa       0x2c CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
+                0x00000000000005f0       0x1e /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .ARM.attributes
-                0x0000000000000626       0x22 /tmp/cc1JoKCj.o
+                0x000000000000060e       0x2c /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-strlen-stub.o)
  .ARM.attributes
-                0x0000000000000648       0x1e /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
- .ARM.attributes
-                0x0000000000000666       0x2c /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-strlen-stub.o)
- .ARM.attributes
-                0x0000000000000692       0x2c /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtend.o
+                0x000000000000063a       0x2c /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtend.o
 
 .comment        0x0000000000000000       0xa7
  .comment       0x0000000000000000       0x59 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtbegin.o
                                          0x5a (size before relaxing)
  .comment       0x0000000000000059       0x5a CMakeFiles/video_ram_replacement.dir/video_ram_replacement.c.obj
- .comment       0x0000000000000059       0x5a CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
  .comment       0x0000000000000059       0x5a CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
  .comment       0x0000000000000059       0x5a CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
  .comment       0x0000000000000059       0x5a CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
@@ -4493,308 +4487,287 @@ LOAD linker stubs
  .comment       0x0000000000000059       0x5a CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .comment       0x0000000000000059       0x5a CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
  .comment       0x0000000000000059       0x5a CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
- .comment       0x0000000000000059       0x5a CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
  .comment       0x0000000000000059       0x4e /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-strlen-stub.o)
                                          0x4f (size before relaxing)
  .comment       0x00000000000000a7       0x5a /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtend.o
 
-.debug_info     0x0000000000000000    0x1f526
- .debug_info    0x0000000000000000     0x15da CMakeFiles/video_ram_replacement.dir/video_ram_replacement.c.obj
- .debug_info    0x00000000000015da      0x4f6 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
- .debug_info    0x0000000000001ad0     0x1bf4 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
- .debug_info    0x00000000000036c4      0xa1f CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
- .debug_info    0x00000000000040e3      0x135 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
- .debug_info    0x0000000000004218      0x511 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
- .debug_info    0x0000000000004729     0x1dbc CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- .debug_info    0x00000000000064e5      0x17d CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
- .debug_info    0x0000000000006662     0x4b68 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_time/time.c.obj
- .debug_info    0x000000000000b1ca     0x123c CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
- .debug_info    0x000000000000c406     0x1ec7 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_util/pheap.c.obj
- .debug_info    0x000000000000e2cd     0x23d4 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
- .debug_info    0x00000000000106a1     0x132e CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
- .debug_info    0x00000000000119cf     0x1d69 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
- .debug_info    0x0000000000013738      0x3e6 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
- .debug_info    0x0000000000013b1e     0x10e5 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
- .debug_info    0x0000000000014c03      0x1bc CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
- .debug_info    0x0000000000014dbf     0x270d CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .debug_info    0x00000000000174cc      0x2bf CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
- .debug_info    0x000000000001778b      0xa7d CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
- .debug_info    0x0000000000018208      0xaaa CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
- .debug_info    0x0000000000018cb2      0xd81 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
- .debug_info    0x0000000000019a33      0x2f7 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
- .debug_info    0x0000000000019d2a     0x2115 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
- .debug_info    0x000000000001be3f      0x1e4 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
- .debug_info    0x000000000001c023      0xea5 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
- .debug_info    0x000000000001cec8     0x1cc5 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
- .debug_info    0x000000000001eb8d       0x26 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
- .debug_info    0x000000000001ebb3      0x973 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-strlen-stub.o)
+.debug_info     0x0000000000000000    0x1d306
+ .debug_info    0x0000000000000000     0x1575 CMakeFiles/video_ram_replacement.dir/video_ram_replacement.c.obj
+ .debug_info    0x0000000000001575     0x1bf4 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+ .debug_info    0x0000000000003169      0xa1f CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+ .debug_info    0x0000000000003b88      0x135 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+ .debug_info    0x0000000000003cbd      0x511 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+ .debug_info    0x00000000000041ce     0x1dbc CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ .debug_info    0x0000000000005f8a      0x17d CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
+ .debug_info    0x0000000000006107     0x4b68 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_time/time.c.obj
+ .debug_info    0x000000000000ac6f     0x123c CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+ .debug_info    0x000000000000beab     0x1ec7 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+ .debug_info    0x000000000000dd72     0x23d4 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+ .debug_info    0x0000000000010146     0x132e CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+ .debug_info    0x0000000000011474     0x1d69 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+ .debug_info    0x00000000000131dd      0x3e6 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+ .debug_info    0x00000000000135c3     0x10e5 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+ .debug_info    0x00000000000146a8      0x1bc CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+ .debug_info    0x0000000000014864     0x270d CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .debug_info    0x0000000000016f71      0x2bf CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+ .debug_info    0x0000000000017230      0xa7d CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+ .debug_info    0x0000000000017cad      0xaaa CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+ .debug_info    0x0000000000018757      0xd81 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
+ .debug_info    0x00000000000194d8      0x2f7 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+ .debug_info    0x00000000000197cf     0x2115 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+ .debug_info    0x000000000001b8e4      0x1e4 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
+ .debug_info    0x000000000001bac8      0xea5 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
+ .debug_info    0x000000000001c96d       0x26 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+ .debug_info    0x000000000001c993      0x973 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-strlen-stub.o)
 
-.debug_abbrev   0x0000000000000000     0x5918
- .debug_abbrev  0x0000000000000000      0x4bf CMakeFiles/video_ram_replacement.dir/video_ram_replacement.c.obj
- .debug_abbrev  0x00000000000004bf      0x1bd CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
- .debug_abbrev  0x000000000000067c      0x3ab CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
- .debug_abbrev  0x0000000000000a27      0x2e6 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
- .debug_abbrev  0x0000000000000d0d       0x95 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
- .debug_abbrev  0x0000000000000da2      0x227 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
- .debug_abbrev  0x0000000000000fc9      0x4e2 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- .debug_abbrev  0x00000000000014ab      0x108 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
- .debug_abbrev  0x00000000000015b3      0x6e0 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_time/time.c.obj
- .debug_abbrev  0x0000000000001c93      0x3dd CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
- .debug_abbrev  0x0000000000002070      0x417 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_util/pheap.c.obj
- .debug_abbrev  0x0000000000002487      0x3b1 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
- .debug_abbrev  0x0000000000002838      0x4fd CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
- .debug_abbrev  0x0000000000002d35      0x499 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
- .debug_abbrev  0x00000000000031ce      0x1bd CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
- .debug_abbrev  0x000000000000338b      0x348 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
- .debug_abbrev  0x00000000000036d3      0x107 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
- .debug_abbrev  0x00000000000037da      0x59f CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .debug_abbrev  0x0000000000003d79      0x175 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
- .debug_abbrev  0x0000000000003eee      0x297 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
- .debug_abbrev  0x0000000000004185      0x2ac CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
- .debug_abbrev  0x0000000000004431      0x306 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
- .debug_abbrev  0x0000000000004737       0xad CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
- .debug_abbrev  0x00000000000047e4      0x627 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
- .debug_abbrev  0x0000000000004e0b      0x14d CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
- .debug_abbrev  0x0000000000004f58      0x2e2 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
- .debug_abbrev  0x000000000000523a      0x4e2 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
- .debug_abbrev  0x000000000000571c       0x14 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
- .debug_abbrev  0x0000000000005730      0x1e8 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-strlen-stub.o)
+.debug_abbrev   0x0000000000000000     0x524d
+ .debug_abbrev  0x0000000000000000      0x493 CMakeFiles/video_ram_replacement.dir/video_ram_replacement.c.obj
+ .debug_abbrev  0x0000000000000493      0x3ab CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+ .debug_abbrev  0x000000000000083e      0x2e6 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+ .debug_abbrev  0x0000000000000b24       0x95 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+ .debug_abbrev  0x0000000000000bb9      0x227 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+ .debug_abbrev  0x0000000000000de0      0x4e2 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ .debug_abbrev  0x00000000000012c2      0x108 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
+ .debug_abbrev  0x00000000000013ca      0x6e0 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_time/time.c.obj
+ .debug_abbrev  0x0000000000001aaa      0x3dd CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+ .debug_abbrev  0x0000000000001e87      0x417 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+ .debug_abbrev  0x000000000000229e      0x3b1 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+ .debug_abbrev  0x000000000000264f      0x4fd CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+ .debug_abbrev  0x0000000000002b4c      0x499 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+ .debug_abbrev  0x0000000000002fe5      0x1bd CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+ .debug_abbrev  0x00000000000031a2      0x348 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+ .debug_abbrev  0x00000000000034ea      0x107 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+ .debug_abbrev  0x00000000000035f1      0x59f CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .debug_abbrev  0x0000000000003b90      0x175 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+ .debug_abbrev  0x0000000000003d05      0x297 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+ .debug_abbrev  0x0000000000003f9c      0x2ac CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+ .debug_abbrev  0x0000000000004248      0x306 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
+ .debug_abbrev  0x000000000000454e       0xad CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+ .debug_abbrev  0x00000000000045fb      0x627 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+ .debug_abbrev  0x0000000000004c22      0x14d CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
+ .debug_abbrev  0x0000000000004d6f      0x2e2 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
+ .debug_abbrev  0x0000000000005051       0x14 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+ .debug_abbrev  0x0000000000005065      0x1e8 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-strlen-stub.o)
 
-.debug_loc      0x0000000000000000    0x16a78
- .debug_loc     0x0000000000000000      0x26d CMakeFiles/video_ram_replacement.dir/video_ram_replacement.c.obj
- .debug_loc     0x000000000000026d      0x47f CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
- .debug_loc     0x00000000000006ec     0x21a8 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
- .debug_loc     0x0000000000002894      0x708 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
- .debug_loc     0x0000000000002f9c       0x73 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
- .debug_loc     0x000000000000300f      0x209 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
- .debug_loc     0x0000000000003218     0x1738 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- .debug_loc     0x0000000000004950       0x4d CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
- .debug_loc     0x000000000000499d     0x3e6b CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_time/time.c.obj
- .debug_loc     0x0000000000008808      0xd3d CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
- .debug_loc     0x0000000000009545     0x17ca CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_util/pheap.c.obj
- .debug_loc     0x000000000000ad0f     0x187f CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
- .debug_loc     0x000000000000c58e      0x4b6 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
- .debug_loc     0x000000000000ca44     0x1dbe CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
- .debug_loc     0x000000000000e802      0x2fa CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
- .debug_loc     0x000000000000eafc      0x699 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
- .debug_loc     0x000000000000f195       0x71 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
- .debug_loc     0x000000000000f206     0x3e5d CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .debug_loc     0x0000000000013063      0x25c CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
- .debug_loc     0x00000000000132bf       0x84 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
- .debug_loc     0x0000000000013343      0x10f CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
- .debug_loc     0x0000000000013452      0x2dc CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
- .debug_loc     0x000000000001372e     0x10e1 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
- .debug_loc     0x000000000001480f      0x531 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
- .debug_loc     0x0000000000014d40      0xb0c CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
- .debug_loc     0x000000000001584c     0x1189 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
- .debug_loc     0x00000000000169d5       0xa3 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-strlen-stub.o)
+.debug_loc      0x0000000000000000    0x15d7b
+ .debug_loc     0x0000000000000000      0xb78 CMakeFiles/video_ram_replacement.dir/video_ram_replacement.c.obj
+ .debug_loc     0x0000000000000b78     0x21a8 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+ .debug_loc     0x0000000000002d20      0x708 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+ .debug_loc     0x0000000000003428       0x73 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+ .debug_loc     0x000000000000349b      0x209 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+ .debug_loc     0x00000000000036a4     0x1738 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ .debug_loc     0x0000000000004ddc       0x4d CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
+ .debug_loc     0x0000000000004e29     0x3e6b CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_time/time.c.obj
+ .debug_loc     0x0000000000008c94      0xd3d CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+ .debug_loc     0x00000000000099d1     0x17ca CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+ .debug_loc     0x000000000000b19b     0x187f CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+ .debug_loc     0x000000000000ca1a      0x4b6 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+ .debug_loc     0x000000000000ced0     0x1dbe CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+ .debug_loc     0x000000000000ec8e      0x2fa CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+ .debug_loc     0x000000000000ef88      0x699 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+ .debug_loc     0x000000000000f621       0x71 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+ .debug_loc     0x000000000000f692     0x3e5d CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .debug_loc     0x00000000000134ef      0x25c CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+ .debug_loc     0x000000000001374b       0x84 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+ .debug_loc     0x00000000000137cf      0x10f CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+ .debug_loc     0x00000000000138de      0x2dc CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
+ .debug_loc     0x0000000000013bba     0x10e1 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+ .debug_loc     0x0000000000014c9b      0x531 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
+ .debug_loc     0x00000000000151cc      0xb0c CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
+ .debug_loc     0x0000000000015cd8       0xa3 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-strlen-stub.o)
 
-.debug_aranges  0x0000000000000000      0xa18
+.debug_aranges  0x0000000000000000      0x940
  .debug_aranges
                 0x0000000000000000       0x38 CMakeFiles/video_ram_replacement.dir/video_ram_replacement.c.obj
  .debug_aranges
-                0x0000000000000038       0x38 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
+                0x0000000000000038       0xf8 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
  .debug_aranges
-                0x0000000000000070       0xf8 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+                0x0000000000000130       0x48 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
  .debug_aranges
-                0x0000000000000168       0x48 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+                0x0000000000000178       0x28 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
  .debug_aranges
-                0x00000000000001b0       0x28 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+                0x00000000000001a0       0x58 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
  .debug_aranges
-                0x00000000000001d8       0x58 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+                0x00000000000001f8       0xa8 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
  .debug_aranges
-                0x0000000000000230       0xa8 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x00000000000002a0       0x20 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
  .debug_aranges
-                0x00000000000002d8       0x20 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
+                0x00000000000002c0       0xc0 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_time/time.c.obj
  .debug_aranges
-                0x00000000000002f8       0xc0 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000000000380       0x78 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
  .debug_aranges
-                0x00000000000003b8       0x78 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x00000000000003f8       0x70 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_util/pheap.c.obj
  .debug_aranges
-                0x0000000000000430       0x70 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x0000000000000468       0x88 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
  .debug_aranges
-                0x00000000000004a0       0x88 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+                0x00000000000004f0       0x60 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
  .debug_aranges
-                0x0000000000000528       0x60 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x0000000000000550       0x68 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
  .debug_aranges
-                0x0000000000000588       0x68 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+                0x00000000000005b8       0x28 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
  .debug_aranges
-                0x00000000000005f0       0x28 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+                0x00000000000005e0       0x58 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
  .debug_aranges
-                0x0000000000000618       0x58 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+                0x0000000000000638       0x30 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
  .debug_aranges
-                0x0000000000000670       0x30 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+                0x0000000000000668       0x90 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .debug_aranges
-                0x00000000000006a0       0x90 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x00000000000006f8       0x30 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
  .debug_aranges
-                0x0000000000000730       0x30 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+                0x0000000000000728       0x20 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
  .debug_aranges
-                0x0000000000000760       0x20 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+                0x0000000000000748       0x20 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
  .debug_aranges
-                0x0000000000000780       0x20 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+                0x0000000000000768       0x38 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
  .debug_aranges
-                0x00000000000007a0       0x38 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
+                0x00000000000007a0       0x18 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .debug_aranges
-                0x00000000000007d8       0x18 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x00000000000007b8       0xc0 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .debug_aranges
-                0x00000000000007f0       0xc0 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000000000000878       0x30 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
  .debug_aranges
-                0x00000000000008b0       0x30 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
+                0x00000000000008a8       0x58 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
  .debug_aranges
-                0x00000000000008e0       0x58 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
+                0x0000000000000900       0x20 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .debug_aranges
-                0x0000000000000938       0xa0 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
- .debug_aranges
-                0x00000000000009d8       0x20 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
- .debug_aranges
-                0x00000000000009f8       0x20 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-strlen-stub.o)
+                0x0000000000000920       0x20 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-strlen-stub.o)
 
-.debug_ranges   0x0000000000000000     0x7530
- .debug_ranges  0x0000000000000000      0x140 CMakeFiles/video_ram_replacement.dir/video_ram_replacement.c.obj
- .debug_ranges  0x0000000000000140      0x100 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
- .debug_ranges  0x0000000000000240      0xa98 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
- .debug_ranges  0x0000000000000cd8      0x440 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
- .debug_ranges  0x0000000000001118       0x18 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
- .debug_ranges  0x0000000000001130      0x178 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
- .debug_ranges  0x00000000000012a8      0xa08 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- .debug_ranges  0x0000000000001cb0       0x28 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
- .debug_ranges  0x0000000000001cd8     0x17a0 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_time/time.c.obj
- .debug_ranges  0x0000000000003478      0x5b8 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
- .debug_ranges  0x0000000000003a30      0x770 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_util/pheap.c.obj
- .debug_ranges  0x00000000000041a0     0x1368 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
- .debug_ranges  0x0000000000005508       0xd8 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
- .debug_ranges  0x00000000000055e0      0x480 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
- .debug_ranges  0x0000000000005a60       0x70 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
- .debug_ranges  0x0000000000005ad0       0xe8 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
- .debug_ranges  0x0000000000005bb8       0x38 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
- .debug_ranges  0x0000000000005bf0      0x4e8 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .debug_ranges  0x00000000000060d8       0xa8 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
- .debug_ranges  0x0000000000006180       0x48 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
- .debug_ranges  0x00000000000061c8       0x10 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
- .debug_ranges  0x00000000000061d8       0x70 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
- .debug_ranges  0x0000000000006248      0x5b8 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
- .debug_ranges  0x0000000000006800       0xb0 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
- .debug_ranges  0x00000000000068b0      0x258 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
- .debug_ranges  0x0000000000006b08      0xa28 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
+.debug_ranges   0x0000000000000000     0x6c80
+ .debug_ranges  0x0000000000000000      0x3b8 CMakeFiles/video_ram_replacement.dir/video_ram_replacement.c.obj
+ .debug_ranges  0x00000000000003b8      0xa98 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+ .debug_ranges  0x0000000000000e50      0x440 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+ .debug_ranges  0x0000000000001290       0x18 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+ .debug_ranges  0x00000000000012a8      0x178 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+ .debug_ranges  0x0000000000001420      0xa08 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ .debug_ranges  0x0000000000001e28       0x28 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
+ .debug_ranges  0x0000000000001e50     0x17a0 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_time/time.c.obj
+ .debug_ranges  0x00000000000035f0      0x5b8 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+ .debug_ranges  0x0000000000003ba8      0x770 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+ .debug_ranges  0x0000000000004318     0x1368 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+ .debug_ranges  0x0000000000005680       0xd8 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+ .debug_ranges  0x0000000000005758      0x480 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+ .debug_ranges  0x0000000000005bd8       0x70 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+ .debug_ranges  0x0000000000005c48       0xe8 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+ .debug_ranges  0x0000000000005d30       0x38 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+ .debug_ranges  0x0000000000005d68      0x4e8 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .debug_ranges  0x0000000000006250       0xa8 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+ .debug_ranges  0x00000000000062f8       0x48 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+ .debug_ranges  0x0000000000006340       0x10 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+ .debug_ranges  0x0000000000006350       0x70 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
+ .debug_ranges  0x00000000000063c0      0x5b8 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+ .debug_ranges  0x0000000000006978       0xb0 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
+ .debug_ranges  0x0000000000006a28      0x258 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
 
-.debug_line     0x0000000000000000    0x127a9
- .debug_line    0x0000000000000000      0x9e4 CMakeFiles/video_ram_replacement.dir/video_ram_replacement.c.obj
- .debug_line    0x00000000000009e4      0x6af CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
- .debug_line    0x0000000000001093     0x16a0 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
- .debug_line    0x0000000000002733      0x6bd CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
- .debug_line    0x0000000000002df0      0x1aa CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
- .debug_line    0x0000000000002f9a      0x45d CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
- .debug_line    0x00000000000033f7     0x147f CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- .debug_line    0x0000000000004876      0x233 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
- .debug_line    0x0000000000004aa9     0x23e9 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_time/time.c.obj
- .debug_line    0x0000000000006e92      0xdf9 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
- .debug_line    0x0000000000007c8b      0xe81 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_util/pheap.c.obj
- .debug_line    0x0000000000008b0c     0x151f CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
- .debug_line    0x000000000000a02b      0x95e CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
- .debug_line    0x000000000000a989     0x1425 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
- .debug_line    0x000000000000bdae      0x4ae CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
- .debug_line    0x000000000000c25c      0x665 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
- .debug_line    0x000000000000c8c1      0x269 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
- .debug_line    0x000000000000cb2a     0x1784 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .debug_line    0x000000000000e2ae      0x202 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
- .debug_line    0x000000000000e4b0      0x3c9 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
- .debug_line    0x000000000000e879      0x32f CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
- .debug_line    0x000000000000eba8      0x414 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
- .debug_line    0x000000000000efbc      0x165 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
- .debug_line    0x000000000000f121     0x146b CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
- .debug_line    0x000000000001058c      0x431 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
- .debug_line    0x00000000000109bd      0x7b6 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
- .debug_line    0x0000000000011173     0x1414 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
- .debug_line    0x0000000000012587       0x60 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
- .debug_line    0x00000000000125e7      0x1c2 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-strlen-stub.o)
+.debug_line     0x0000000000000000    0x1114c
+ .debug_line    0x0000000000000000      0xe4a CMakeFiles/video_ram_replacement.dir/video_ram_replacement.c.obj
+ .debug_line    0x0000000000000e4a     0x16a0 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+ .debug_line    0x00000000000024ea      0x6bd CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+ .debug_line    0x0000000000002ba7      0x1aa CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+ .debug_line    0x0000000000002d51      0x45d CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+ .debug_line    0x00000000000031ae     0x147f CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ .debug_line    0x000000000000462d      0x233 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
+ .debug_line    0x0000000000004860     0x23e9 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_time/time.c.obj
+ .debug_line    0x0000000000006c49      0xdf9 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+ .debug_line    0x0000000000007a42      0xe81 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+ .debug_line    0x00000000000088c3     0x151f CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+ .debug_line    0x0000000000009de2      0x95e CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+ .debug_line    0x000000000000a740     0x1425 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+ .debug_line    0x000000000000bb65      0x4ae CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+ .debug_line    0x000000000000c013      0x665 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+ .debug_line    0x000000000000c678      0x269 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+ .debug_line    0x000000000000c8e1     0x1784 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .debug_line    0x000000000000e065      0x202 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+ .debug_line    0x000000000000e267      0x3c9 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+ .debug_line    0x000000000000e630      0x32f CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+ .debug_line    0x000000000000e95f      0x414 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
+ .debug_line    0x000000000000ed73      0x165 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+ .debug_line    0x000000000000eed8     0x146b CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+ .debug_line    0x0000000000010343      0x431 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
+ .debug_line    0x0000000000010774      0x7b6 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
+ .debug_line    0x0000000000010f2a       0x60 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+ .debug_line    0x0000000000010f8a      0x1c2 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-strlen-stub.o)
 
-.debug_str      0x0000000000000000     0x3e85
- .debug_str     0x0000000000000000      0xab8 CMakeFiles/video_ram_replacement.dir/video_ram_replacement.c.obj
-                                        0xb86 (size before relaxing)
- .debug_str     0x0000000000000ab8      0x12e CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
-                                        0x3f8 (size before relaxing)
- .debug_str     0x0000000000000be6      0x602 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+.debug_str      0x0000000000000000     0x39ab
+ .debug_str     0x0000000000000000      0xa6d CMakeFiles/video_ram_replacement.dir/video_ram_replacement.c.obj
+                                        0xb3e (size before relaxing)
+ .debug_str     0x0000000000000a6d      0x602 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
                                         0x9df (size before relaxing)
- .debug_str     0x00000000000011e8      0x1b7 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+ .debug_str     0x000000000000106f      0x1c6 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
                                         0x38f (size before relaxing)
- .debug_str     0x000000000000139f       0x7b CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+ .debug_str     0x0000000000001235       0x8b CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
                                         0x246 (size before relaxing)
- .debug_str     0x000000000000141a       0xf6 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+ .debug_str     0x00000000000012c0       0xf6 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
                                         0x371 (size before relaxing)
- .debug_str     0x0000000000001510      0x3a6 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ .debug_str     0x00000000000013b6      0x3a6 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
                                         0x80e (size before relaxing)
- .debug_str     0x00000000000018b6       0x66 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
+ .debug_str     0x000000000000175c       0x66 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
                                         0x274 (size before relaxing)
- .debug_str     0x000000000000191c      0x6ea CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_time/time.c.obj
+ .debug_str     0x00000000000017c2      0x6ea CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_time/time.c.obj
                                         0xf49 (size before relaxing)
- .debug_str     0x0000000000002006      0x15a CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+ .debug_str     0x0000000000001eac      0x15a CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
                                         0x67a (size before relaxing)
- .debug_str     0x0000000000002160       0xf0 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+ .debug_str     0x0000000000002006       0xf0 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_util/pheap.c.obj
                                         0x813 (size before relaxing)
- .debug_str     0x0000000000002250      0x16f CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+ .debug_str     0x00000000000020f6      0x16f CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
                                         0x5cf (size before relaxing)
- .debug_str     0x00000000000023bf      0x243 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+ .debug_str     0x0000000000002265      0x243 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
                                         0xa6a (size before relaxing)
- .debug_str     0x0000000000002602      0x223 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+ .debug_str     0x00000000000024a8      0x261 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
                                         0x661 (size before relaxing)
- .debug_str     0x0000000000002825       0x6b CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+ .debug_str     0x0000000000002709       0x99 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
                                         0x2f1 (size before relaxing)
- .debug_str     0x0000000000002890      0x130 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+ .debug_str     0x00000000000027a2      0x130 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
                                         0x758 (size before relaxing)
- .debug_str     0x00000000000029c0       0x75 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+ .debug_str     0x00000000000028d2       0x75 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
                                         0x25f (size before relaxing)
- .debug_str     0x0000000000002a35      0x1ba CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .debug_str     0x0000000000002947      0x1ba CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
                                         0x7f4 (size before relaxing)
- .debug_str     0x0000000000002bef       0xce CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+ .debug_str     0x0000000000002b01       0xce CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
                                         0x28f (size before relaxing)
- .debug_str     0x0000000000002cbd       0xa7 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+ .debug_str     0x0000000000002bcf       0xa7 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
                                         0x67d (size before relaxing)
- .debug_str     0x0000000000002d64       0x8b CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+ .debug_str     0x0000000000002c76       0x8b CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
                                         0x699 (size before relaxing)
- .debug_str     0x0000000000002def       0xd5 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
+ .debug_str     0x0000000000002d01       0xd5 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
                                         0x74a (size before relaxing)
- .debug_str     0x0000000000002ec4      0x27d CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+ .debug_str     0x0000000000002dd6      0x27d CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
                                         0x448 (size before relaxing)
- .debug_str     0x0000000000003141      0x369 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+ .debug_str     0x0000000000003053      0x379 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
                                         0xbe0 (size before relaxing)
- .debug_str     0x00000000000034aa       0xea CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
+ .debug_str     0x00000000000033cc       0xea CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
                                         0x2a9 (size before relaxing)
- .debug_str     0x0000000000003594      0x318 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
+ .debug_str     0x00000000000034b6      0x318 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
                                         0x636 (size before relaxing)
- .debug_str     0x00000000000038ac      0x3fc CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
-                                        0xac5 (size before relaxing)
- .debug_str     0x0000000000003ca8       0xa3 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
- .debug_str     0x0000000000003d4b      0x13a /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-strlen-stub.o)
+ .debug_str     0x00000000000037ce       0xa3 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+ .debug_str     0x0000000000003871      0x13a /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-strlen-stub.o)
                                         0x5c2 (size before relaxing)
 
-.debug_frame    0x0000000000000000     0x1a30
+.debug_frame    0x0000000000000000     0x17c4
  .debug_frame   0x0000000000000000       0x88 CMakeFiles/video_ram_replacement.dir/video_ram_replacement.c.obj
- .debug_frame   0x0000000000000088       0x90 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
- .debug_frame   0x0000000000000118      0x280 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
- .debug_frame   0x0000000000000398       0xa4 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
- .debug_frame   0x000000000000043c       0x30 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
- .debug_frame   0x000000000000046c       0xc4 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
- .debug_frame   0x0000000000000530      0x1ac CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- .debug_frame   0x00000000000006dc       0x20 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
- .debug_frame   0x00000000000006fc      0x294 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_time/time.c.obj
- .debug_frame   0x0000000000000990      0x150 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
- .debug_frame   0x0000000000000ae0      0x178 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_util/pheap.c.obj
- .debug_frame   0x0000000000000c58      0x1a4 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
- .debug_frame   0x0000000000000dfc       0xd4 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
- .debug_frame   0x0000000000000ed0      0x124 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
- .debug_frame   0x0000000000000ff4       0x40 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
- .debug_frame   0x0000000000001034       0xa8 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
- .debug_frame   0x00000000000010dc       0x40 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
- .debug_frame   0x000000000000111c      0x1e8 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .debug_frame   0x0000000000001304       0x64 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
- .debug_frame   0x0000000000001368       0x2c CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
- .debug_frame   0x0000000000001394       0x28 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
- .debug_frame   0x00000000000013bc       0x80 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
- .debug_frame   0x000000000000143c      0x29c CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
- .debug_frame   0x00000000000016d8       0x5c CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
- .debug_frame   0x0000000000001734       0xf8 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
- .debug_frame   0x000000000000182c      0x1dc CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
- .debug_frame   0x0000000000001a08       0x28 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-strlen-stub.o)
+ .debug_frame   0x0000000000000088      0x280 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+ .debug_frame   0x0000000000000308       0xa4 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+ .debug_frame   0x00000000000003ac       0x30 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+ .debug_frame   0x00000000000003dc       0xc4 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+ .debug_frame   0x00000000000004a0      0x1ac CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ .debug_frame   0x000000000000064c       0x20 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
+ .debug_frame   0x000000000000066c      0x294 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_time/time.c.obj
+ .debug_frame   0x0000000000000900      0x150 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+ .debug_frame   0x0000000000000a50      0x178 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+ .debug_frame   0x0000000000000bc8      0x1a4 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+ .debug_frame   0x0000000000000d6c       0xd4 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+ .debug_frame   0x0000000000000e40      0x124 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+ .debug_frame   0x0000000000000f64       0x40 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+ .debug_frame   0x0000000000000fa4       0xa8 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+ .debug_frame   0x000000000000104c       0x40 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+ .debug_frame   0x000000000000108c      0x1e8 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .debug_frame   0x0000000000001274       0x64 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+ .debug_frame   0x00000000000012d8       0x2c CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+ .debug_frame   0x0000000000001304       0x28 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+ .debug_frame   0x000000000000132c       0x80 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
+ .debug_frame   0x00000000000013ac      0x29c CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+ .debug_frame   0x0000000000001648       0x5c CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
+ .debug_frame   0x00000000000016a4       0xf8 CMakeFiles/video_ram_replacement.dir/tree/downloaded_tools/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
+ .debug_frame   0x000000000000179c       0x28 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-strlen-stub.o)
 
 .stabstr        0x0000000000000000       0x75
  .stabstr       0x0000000000000000       0x75 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libnosys.a(close.o)
